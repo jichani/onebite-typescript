@@ -1,14 +1,19 @@
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "outDir": "dist",
-    "strict": true,
-    "strictNullChecks": false,
-    "moduleDetection": "force"
-  },
-  "ts-node": {
-    "esm": true
-  },
-  "include": ["src"]
+    "compileOnSave": true, // 저장 단계에서 컴파일 할지 여부
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "outDir": "dist",
+        "strict": true,
+        "strictNullChecks": false,
+        "moduleDetection": "force",
+        "noEmitOnError": true,
+        "removeComments": false,
+        "sourceMap": true,
+        "skipLibCheck": true
+    },
+    "ts-node": {
+        "esm": true
+    },
+    "include": ["src"]
 }
