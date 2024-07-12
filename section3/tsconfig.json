@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "ESNext", // 컴파일될 버전을 의미한다. ESNext: 최신버전
+        "module": "ESNext",
+        "outDir": "dist", // 컴파일된 js 파일의 위치를 지정
+        "strict": true, // 타입 검사를 얼마나 엄격하게 할 지 수준을 정하는 코드
+        "moduleDetection": "force", // 파일을 나눠서 모듈로 취급하게 하는 코드(전역을 나눈다.)
+        "skipLibCheck": true
+    },
+    "ts-node": {
+        "esm": true
+    },
+    "include": ["src"] // src 폴더 안에 있는 ts를 모두 컴파일
+}
